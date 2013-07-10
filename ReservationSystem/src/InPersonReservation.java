@@ -4,12 +4,12 @@ public class InPersonReservation extends Reservation {
         this.time = time;
         this.name = name;
         this.people = people;
-        this.type = "In-person";
+        this.type = "in-person";
     }
 
     @Override
     public void displayReservation() {
         super.displayReservation();
-        System.out.println("Type:" + this.type);
+        System.out.println("--Type: " + this.type + "\n");
     }
 }

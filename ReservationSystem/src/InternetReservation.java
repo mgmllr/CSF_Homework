@@ -11,16 +11,16 @@ public class InternetReservation extends Reservation {
         this.people = people;
         this.phone = phone;
         this.sourceWebsite = sourceWebsite;
-        this.type = "Internet";
+        this.type = "internet";
         this.createdAt = new Date();
     }
 
     @Override
     public void displayReservation() {
         super.displayReservation();
-        System.out.println("Phone Number:" + this.phone);
-        System.out.println("Source Website:" + this.sourceWebsite);
-        System.out.println("Created At:" + this.createdAt);
-        System.out.println("Type:" + this.type);
+        System.out.println("--Phone Number: " + this.phone);
+        System.out.println("--Source Website: " + this.sourceWebsite);
+        System.out.println("--Created At: " + this.createdAt);
+        System.out.println("--Type: " + this.type + "\n");
     }
 }

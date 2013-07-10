@@ -2,33 +2,51 @@ import java.util.ArrayList;
 
 public class Restaurant {
     private int maxCapacity = 50;
-    private ArrayList<ArrayList<Reservation>> hours = new ArrayList<ArrayList<Reservation>>(24);
+    public ArrayList<ArrayList<Reservation>> hours = new ArrayList<ArrayList<Reservation>>(24);
 
-    public  void createLists() {
+    public void createLists() {
         for(int i = 0; i < 24; i++) {
-            hours.set(i, new ArrayList<Reservation>());
+            hours.add(new ArrayList<Reservation>());
         }
     }
 
-    public boolean addReservation(Reservation reservation) {
-        if(getCustomerCount(reservation) + reservation.people <= maxCapacity) {
+    public void addReservation(Reservation reservation) {
+        if(getCustomerCount(reservation.time) + reservation.people <= maxCapacity) {
             hours.get(reservation.time).add(reservation);
-            return true;
+            return;
         } else {
             System.out.println("We cannot accommodate your party at that time.");
-            return false;
+            return;
         }
     }
 
-    public int getCustomerCount(Reservation reservation) {
-        ArrayList<Reservation> reservationsPerHour = hours.get(reservation.time);
+    public void removeReservation(int time, String name) {
+        ArrayList<Reservation> reservationsPerHour = hours.get(time);
+        if(!reservationsPerHour.isEmpty()) {
+            for(int i = 0; i < reservationsPerHour.size(); i++) {
+                if(reservationsPerHour.get(i).name.equals(name)) {
+                    reservationsPerHour.remove(i);
+                    System.out.println("Reservation removed.");
+                    return;
+                }
+            }
+        }
+        System.out.println("Could not find that reservation.");
+        return;
+    }
+
+    public int getCustomerCount(int time) {
+        ArrayList<Reservation> reservationsPerHour = hours.get(time);
         int customerCount = 0;
-        for(int i = 0; i < reservationsPerHour.size(); i++)  {
-            Reservation res = reservationsPerHour.get(i);
-            customerCount += res.people;
+        if(reservationsPerHour.isEmpty()) {
+            return 0;
+        } else {
+            for(int i = 0; i < reservationsPerHour.size(); i++)  {
+                Reservation res = reservationsPerHour.get(i);
+                customerCount += res.people;
+            }
+            return customerCount;
         }
-        return customerCount;
     }
-
 
 }

@@ -6,14 +6,14 @@ public class PhoneReservation extends Reservation {
         this.name = name;
         this.people = people;
         this.phone = phone;
-        this.type = "Phone";
+        this.type = "phone";
     }
 
     @Override
     public void displayReservation() {
         super.displayReservation();
-        System.out.println("Phone Number:" + this.phone);
-        System.out.println("Type:" + this.type);
+        System.out.println("--Phone Number: " + this.phone);
+        System.out.println("--Type: " + this.type + "\n");
     }
 
 }

@@ -5,8 +5,7 @@ public abstract class Reservation {
     protected String type;
 
     public void displayReservation(){
-        System.out.println("Time:" + this.time);
-        System.out.println("Name:" + this.name);
-        System.out.println("Number of People:" + this.people);
+        System.out.println("--Name: " + this.name);
+        System.out.println("--Number of People: " + this.people);
     }
 }
