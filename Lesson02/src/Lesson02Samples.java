@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -38,7 +39,6 @@ public class Lesson02Samples {
         }
     }
 
-    // There's a bug in this, find it
     public static boolean stringIsAllAs(String s) {
         int i = 0;
         while (i < s.length()) {
@@ -53,7 +53,6 @@ public class Lesson02Samples {
         return true;
     }
 
-    // Methods to fill in
     public static void reverseNumbers() {
         // 1) Ask the user for how many numbers they want to enter
         // 2) Let them enter that many numbers
