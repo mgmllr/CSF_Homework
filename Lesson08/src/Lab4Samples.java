@@ -10,9 +10,9 @@ public class Lab4Samples {
         if (result.equals("bst")) {
             bst();
         }
-        else if (result.equals("maxheap")) {
-            maxHeap();
-        }
+//        else if (result.equals("maxheap")) {
+//            maxHeap();
+//        }
         else {
             System.out.println("Invalid input, bailing");
         }
@@ -37,16 +37,16 @@ public class Lab4Samples {
         }
     }
 
-    public static void maxHeap() {
-        IntMaxHeap maxHeap = new IntMaxHeap();
-
-        while(true) {
-            Scanner consoleScanner = new Scanner(System.in);
-            System.out.print("\nEnter a number to be entered in the maxheap: ");
-            int newInt = consoleScanner.nextInt();
-
-            maxHeap.insertValue(newInt);
-            maxHeap.printTopValue();
-        }
-    }
+//    public static void maxHeap() {
+//        IntMaxHeap maxHeap = new IntMaxHeap();
+//
+//        while(true) {
+//            Scanner consoleScanner = new Scanner(System.in);
+//            System.out.print("\nEnter a number to be entered in the maxheap: ");
+//            int newInt = consoleScanner.nextInt();
+//
+//            maxHeap.insertValue(newInt);
+//            maxHeap.printTopValue();
+//        }
+//    }
 }

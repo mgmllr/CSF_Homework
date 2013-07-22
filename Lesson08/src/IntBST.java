@@ -21,14 +21,53 @@ public class IntBST {
     }
 
     public void insertValue(int value) {
-        // TODO: Implement insert value for a binary search tree
-        throw new UnsupportedOperationException("Not implemented!");
+        IntNode newNode = new IntNode(value);
+        if(rootNode == null) {
+            rootNode = newNode;
+        } else {
+            IntNode currentNode = rootNode;
+            while(true) {
+                if(newNode.getValue() < currentNode.getValue()) {
+                    if(currentNode.getLeftChild() == null) {
+                        currentNode.setLeftChild(newNode);
+                        break;
+                    } else {
+                        currentNode = currentNode.getLeftChild();
+                    }
+                } else if(newNode.getValue() > currentNode.getValue()) {
+                    if(currentNode.getRightChild() == null) {
+                        currentNode.setRightChild(newNode);
+                        break;
+                    } else {
+                        currentNode = currentNode.getRightChild();
+                    }
+                }
+            }
+        }
     }
 
     public boolean search(int value) {
-        // TODO: Implement search for a value for a binary search tree
-        throw new UnsupportedOperationException("Not implemented!");
-        return false;
+        if(value == rootNode.getValue()) {
+            return true;
+        } else {
+            IntNode node = rootNode;
+            while(true) {
+                if(value < node.getValue()) {
+                    if(value == node.getLeftChild().getValue()){
+                        return true;
+                    } else {
+                        node = node.getLeftChild();
+                    }
+                } else if(value > node.getValue()) {
+                    if(value == node.getRightChild().getValue()) {
+                        return true;
+                    } else {
+                        node = node.getRightChild();
+                    }
+                }
+                return false;
+            }
+        }
     }
 
     public void remove(int value) {

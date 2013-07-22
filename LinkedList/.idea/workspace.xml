@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ElevatorSystem/src/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ElevatorSystem/src/Elevator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ElevatorSystem/src/ElevatorOperator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ElevatorSystem/src/Floor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntListNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../ElevatorSystem/src/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ReservationSystem/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ReservationSystem/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lesson08/src/IntBST.java" afterPath="$PROJECT_DIR$/../Lesson08/src/IntBST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lesson08/src/IntMaxHeap.java" afterPath="$PROJECT_DIR$/../Lesson08/src/IntMaxHeap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lesson08/src/Lab4Samples.java" afterPath="$PROJECT_DIR$/../Lesson08/src/Lab4Samples.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Lesson03/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Lesson03/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LinkedList.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" time="1373930920803" ignored="false" />
+    <file path="/Dummy.txt" changelist="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" time="1374435427372" ignored="false" />
     <file path="/IntListNode.java" changelist="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" time="1373935861920" ignored="false" />
     <file path="/IntLinkedList.java" changelist="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" time="1373936546965" ignored="false" />
     <file path="/Application.java" changelist="c6f6d41c-9f1e-4089-9fc6-f543cb7f1b30" time="1373936323353" ignored="false" />
@@ -33,7 +29,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -70,6 +65,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -79,19 +75,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IntListNode.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="IntListNode.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IntListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="7" column="24" selection-start="158" selection-end="158" vertical-scroll-proportion="0.16304348">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntLinkedList.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IntLinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="22" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5724466">
+            <state line="20" column="14" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,7 +158,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -198,6 +193,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,7 +355,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="790" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -369,18 +365,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67014927" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67014927" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -455,6 +451,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
@@ -464,7 +495,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5724466">
+        <state line="20" column="14" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IntListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="24" selection-start="158" selection-end="158" vertical-scroll-proportion="0.16304348">
           <folding />
         </state>
       </provider>
