@@ -25,55 +25,6 @@ public class CoinCounter {
     /**
      * Returns the number of coins required to make change for a given value.
      *
-     * Greedy algorithm solution.
-     *
-     * @param totalSum The total value in coins that must be made change for.
-     * @return The total number of coins that are needed to make change for totalSum.
-     */
-    public int simpleNumberOfCoinsRequired(int totalSum) {
-        /*
-            To calculate the number of coins required to give change in
-            most sane coin denominations, a simple 'greedy' algorithm
-            is sufficient.
-
-            Imagine you need to give change for 42 cents in America.
-            First you would take a quarter; you'll  need 17 more cents for change.
-            Second you take a dime; you'll need 7 more cents for change.
-            Third you take a nickle; you'll need 2 more cents for change.
-            Fourth you take a penny; you'll need 1 more cent for change.
-            Fifth you take another penny; you're all done making change, and you needed 5 coins.
-
-            For most currency denominations, we can generalize the rule for giving change:
-                * When giving change, always take the largest value coin that's less than the
-                change you need to give (e.g. if you need 42, take a quarter. If you have 8, take a nickle).
-                * Subtract that amount from the total amount of change you need to give.
-                * Repeat.
-
-            Assignment: Implement this algorithm below and make testSimpleNumberOfCoinsRequired pass.
-         */
-
-        throw new NotImplementedException();
-
-        int count = 0;
-        int denominationIndex = this.denominations.length - 1;
-        while (totalSum > 0) {
-            if (this.denominations[denominationIndex] <= totalSum) {
-                count += Math.floor(totalSum/this.denominations[denominationIndex]);
-                totalSum %= this.denominations[denominationIndex];
-            } else {
-                denominationIndex--;
-
-                if (denominationIndex < 0)
-                    break;
-            }
-        }
-
-        return totalSum == 0 ? count : CHANGE_NOT_POSSIBLE_FLAG;
-    }
-
-    /**
-     * Returns the number of coins required to make change for a given value.
-     *
      * Memoized algorithm solution.
      *
      * @param totalSum The total value in coins that must be made change for.
@@ -100,14 +51,9 @@ public class CoinCounter {
                  * Repeat
                 * Return the calculated value for totalSum
 
-            First assignment: Make testNumberOfCoinsRequired pass
-            Second assignment: Make testWonderlandDenominations pass
-            Third assignment: Make testTerribleDenominations pass
+            A sample solution:
          */
 
-        throw new NotImplementedException();
-
-        // Instructor sample soln: Remove before giving to students:
         // Speed, O(m * n), m = totalSum, n = number of coins
         int[] numberOfCoinsRequiredAtValue = new int[totalSum + 1];
 
@@ -128,5 +74,20 @@ public class CoinCounter {
         }
 
         return numberOfCoinsRequiredAtValue[totalSum];
+    }
+
+    int recursiveNumberOfCoinsRequired(int totalSum) {
+        /*
+        TODO: Create a recursive numberOfCoinsRequired method, making the unit tests pass.
+         - The algorithm is:
+           There are denominations and a desired amount, n.
+           Get the number of coins required for n minus each denomination.
+           The number of coins needed for n is equal to the least of those values, plus one.
+
+         - What are your base cases?
+         - What is your recursive step?
+         */
+
+        throw new NotImplementedException();
     }
 }

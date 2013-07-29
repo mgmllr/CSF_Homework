@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -36,15 +37,23 @@ public class CSFLesson10 {
 
         System.out.println("Array: " + Arrays.toString(array));
 
+        Arrays.sort(array);
         for (int i = 0; i < 10; i++) {
             int thisValue = array[i];
             boolean isDuplicate = false;
-            for (int j = 0; j < 10; j++) {
-                if ((i != j) && (thisValue == array[j])) {
+            if(i == 0) {
+                if (array[i] == array[i + 1]) {
+                    isDuplicate = true;
+                }
+            } else if (i == (array.length - 1)) {
+                if (array[i] == array[i - 1]) {
+                    isDuplicate = true;
+                }
+            } else {
+               if (array[i] == array[i - 1] || array[i] == array[i + 1]) {
                     isDuplicate = true;
                 }
             }
-
             if (isDuplicate) {
                 System.out.println("Value " + thisValue + " is a duplicate.");
             } else {
@@ -86,8 +95,8 @@ public class CSFLesson10 {
 
     public static void main(String[] args) {
         //firstLab();
-        //secondLab();
-        thirdLab();
+        secondLab();
+        //thirdLab();
         //fourthLab();
         //fifthLab();
     }
