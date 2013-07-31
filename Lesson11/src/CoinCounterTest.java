@@ -18,6 +18,7 @@ public class CoinCounterTest {
 
         int[] terrible = {2, 5, 7, 20};
         this.terribleDenominations = new CoinCounter(terrible);
+
     }
 
     @Test

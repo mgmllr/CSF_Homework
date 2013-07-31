@@ -87,7 +87,34 @@ public class CoinCounter {
          - What are your base cases?
          - What is your recursive step?
          */
-
-        throw new NotImplementedException();
+        if(totalSum == 0){
+            return 0;
+        } else if (Arrays.binarySearch(denominations, totalSum) >= 0 ) {
+            return 1;
+        } else if (totalSum < 0 || totalSum < this.denominations[0]) {
+            return CHANGE_NOT_POSSIBLE_FLAG;
+        }
+        int minCoins = CHANGE_NOT_POSSIBLE_FLAG;
+        for (int coinValue : this.denominations) {
+            int remaining = totalSum - coinValue;
+            int coinsRequired = recursiveNumberOfCoinsRequired(remaining);
+            if (coinsRequired != CHANGE_NOT_POSSIBLE_FLAG){
+                int numRequired = 1 + coinsRequired;
+                minCoins = Math.min(numRequired, minCoins);
+            }
+        }
+        return minCoins;
     }
+
+//     int greedyNumberOfCoins(int totalSum){
+//         int coinCount = 0;
+//         int remainder;
+//         int maxDenom  = this.denominations[this.denominations.length - 1];
+//         if(totalSum >= maxDenom){
+//             remainder = totalSum - maxDenom;
+//             coinCount += 1;
+//
+//         }
+//
+//     }
 }

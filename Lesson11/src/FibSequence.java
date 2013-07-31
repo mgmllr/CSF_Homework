@@ -12,9 +12,15 @@ public class FibSequence {
      * @return The respective fibonacci number
      */
     int fibNumber(int n) {
-        // TODO: Fill out to make FibSequenceTest pass
+        if(n == 0) {
+            return 0;
+        } else if(n == 1) {
+            return 1;
+        }
 
-        throw new NotImplementedException();
+        return fibNumber(n - 1) + fibNumber(n - 2);
+
+        //throw new NotImplementedException();
     }
 
 }
