@@ -1,8 +1,32 @@
 import java.util.LinkedList;
+import java.util.Scanner;
 
 
 public class IntBST {
     private IntNode rootNode;
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        IntBST bst = new IntBST();
+        while(true) {
+            System.out.print("print, gt or insert: ");
+            String result = scanner.next();
+
+            if (result.equals("print")) {
+                bst.printBFS();
+                bst.printDFS();;
+            } else {
+                System.out.print("\nvalue? ");
+                int value = scanner.nextInt();
+
+                if (result.equals("gt")) {
+                    bst.valuesGreaterThan(value);
+                } else if (result.equals("insert")) {
+                    bst.insertValue(value);
+                }
+            }
+        }
+    }
 
     public void printBFS() {
         // TODO: Implement a BFS of a tree using a queue
